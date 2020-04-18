@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+       <ul class="topnav" id="dropdownClick"> 
+           <li><a href="#home">Home</a></li>
+           <li><a href="#news">News</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="#about">About</a></li>
+           <li class="topnav-right"><a href="#signin">SignIn</a></li>
+           <li class="topnav-right"><a href="BootstrapLoginPortel/index.html">SignUp</a></li>
+           <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+       </ul> 
+      
+    </nav>
+   <!---->
+   <div class="container" id="section-1-gradient">
+       <div class="row">
+        <div class="col-6">
+            <div class="leftSide-col">
+                <h1 class="large">Look Forword </h1>
+                <h1 class="large">Made for Developers</h1>
+            </div>
+             <!-- create form input-->
+             <form action="">
+                 <div class="leftSide-col">
+                     <h2>Username</h2>
+                     <input type="text" class="inputbox" name="username" placeholder="Username">
+
+                     <h2>Password</h2>
+                     <input type="text" class="inputbox" name="password" placeholder="Password">
+                     
+                 </div>
+             </form>
+
+           
+        </div>
+
+        <div class="col-6">
+            <div class="rightSide-col">
+                <div class="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iH4JJuoHQHc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+
+
+       </div>
+
+   </div>
+
+   <header>
+       <div>
+           <h1 class="section2Header">The Standards of Awesomeness</h1>
+       </div>
+   </header>
+   <div class="container">
+       <div class="row">
+           <!--chat with me col-->
+           <div class="col-4">
+               <div class="box">
+                   <div class="icon">
+                       <img src="tie.png" alt="">
+                   </div>
+                   <label for="">Chat With Me</label>
+                   <p>Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                        layout,and printing in place of English to emphasise design
+                        elements over content. It's also called placeholder (or filler)
+                        text.It's a convenient tool for mock-ups </p>
+               </div>
+
+           </div>
+          <!---->
+           <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="cap.jpg" alt="">
+                </div>
+                <label for="">Learn to Code</label>
+                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                     layout,and printing in place of English to emphasise design
+                     elements over content. It's also called placeholder (or filler)
+                     text.It's a convenient tool for mock-ups </p>
+            </div>
+
+        </div>
+
+         <!---->
+         <div class="col-4">
+            <div class="box">
+                <div class="icon">
+                    <img src="tie.png" alt="">
+                </div>
+                <label for="">Build an Empire</label>
+                <p>Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                     layout,and printing in place of English to emphasise design
+                     elements over content. It's also called placeholder (or filler)
+                     text.It's a convenient tool for mock-ups </p>
+            </div>
+
+        </div> 
+       </div>
+
+       <div class="row">
+           <div class="col-12">
+               <button class="learnMore">Learn More</button>
+           </div>
+       </div>
+   </div>
+   
+   <hr>
+   <div class="container">
+       <div class="row">
+       <div class="col-7">
+           <article>
+               <p>
+                The personal blog of Alex Sexton covers a broad variety of JavaScript related topics
+                in a very plain and easy-to-understand way. You may also discover some new tools and 
+                trends on his blog which are waiting to be explored.As a developer, Paul is well-known
+                for creating tools that improve workflows and make life easier for other developers.
+                He’s currently working on Google Chrome DevTools at Google. You can gather useful 
+                insights on his personal blog where he regularly publishes web dev related articles.
+               </p>
+           </article>
+         </div>
+         <div class="col-5">
+             <div class="slopeIcon">
+                 <img src="rect.gif" alt="">
+             </div>
+         </div>
+   </div>
+</div>
+           <!-------------------footer ----------------->
+
+           <footer class="footsy">
+               <div class="row">
+                   <div class="col-3 mobileStack">
+                       <h1>Company</h1>
+                       <ul>
+                           <li>About</li>
+                           <li>Blogs</li>
+                           <li>Careers</li>
+                       </ul>
+                   </div>
+
+                   <div class="col-3 mobileStack">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>Computers</li>
+                        <li>iPads</li>
+                        <li>iPhones</li>
+                    </ul>
+                </div>
+
+                <div class="col-3 mobileStack">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Developers</li>
+                        <li>Designers</li>
+                        <li>Hackers</li>
+                    </ul>
+                </div>
+
+                <div class="col-3 mobileStack">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Help</li>
+                        <li>QA</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+               </div>
+           </footer>
+   
+
+
+
+
+
+
+
+
+    <script>
+        //mobile function
+        function dropdownMenu(){
+            var x= document.getElementById("dropdownClick");
+            if(x.className ==="topnav"){
+                x.className +="responsive";//change topnav to topnav.response;
+            }
+            else{
+                x.className="topnav";                                   
+            }
+        }
+    </script>
+    
+</body>
+</html>
